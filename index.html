@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="St. Mary &amp; St. Paul Church  official website with clergy, services, meetings, and contact information." />
+  <title>St. Mary &amp; St. Paul Church  El Hadra El Gedida</title>
+  <link rel="icon" type="image/png" href="assets/church-logo.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Cairo:wght@400;600;700;800&family=Cinzel:wght@400;600;700&family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body data-title-en="St. Mary &amp; St. Paul Church  El Hadra El Gedida" data-title-ar=" كنيسة السيدة العذراء والقديس بولس الرسول الحضره الجديده" data-desc-en="St. Mary &amp; St. Paul Church  El Hadra El Gedida official website with clergy, services, meetings, and contact information." data-desc-ar="الموقع الرسمي لكنيسة السيدة العذراء والقديس بولس الرسول ويشمل الكهنة والخدمات والاجتماعات وبيانات التواصل.">
+  
+<nav id="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-brand">
+      <img src="assets/church-logo.png" alt="Church logo" class="brand-logo" />
+      <div>
+        <div class="brand-name" data-en="St. Mary &amp; St. Paul Church " data-ar=" كنيسة السيدة العذراء والقديس بولس الرسول ">St. Mary &amp; St. Paul Church </div>
+        <div class="brand-sub" data-en="El Hadra El Gedida" data-ar="الحضرة الجديدة">El Hadra El Gedida</div>
+
+      </div>
+    </a>
+
+    <div class="nav-links">
+            <a href="index.html" class="active" data-en="Home" data-ar="الرئيسية">Home</a><a href="pages/about.html" data-en="About" data-ar="عن الكنيسة">About</a><a href="pages/services.html" data-en="Services &amp; Liturgies" data-ar="القداسات والخدمات">Services &amp; Liturgies</a><a href="pages/events.html" data-en="Events" data-ar="الفعاليات">Events</a><a href="pages/be-sajy.html" data-en="Be Sajy" data-ar="بي ساجي">Be Sajy</a><a href="pages/announcements.html" data-en="Announcements" data-ar="الإعلانات">Announcements</a><a href="pages/gallery.html" data-en="Gallery" data-ar="المعرض">Gallery</a><a href="pages/contact.html" data-en="Contact" data-ar="اتصل بنا">Contact</a>
+    </div>
+
+    <div class="nav-actions">
+      <button class="lang-toggle" type="button" onclick="toggleLanguage()" aria-label="Language switch">
+        <span>العربية</span>
+        <span class="sep">|</span>
+        <span>English</span>
+      </button>
+      <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<div class="nav-mob" id="navMob">
+  <button class="lang-toggle" type="button" onclick="toggleLanguage()" aria-label="Language switch">
+    <span>العربية</span>
+    <span class="sep">|</span>
+    <span>English</span>
+  </button>
+  <a href="index.html" class="active" data-en="Home" data-ar="الرئيسية">Home</a><a href="pages/about.html" data-en="About" data-ar="عن الكنيسة">About</a><a href="pages/services.html" data-en="Services &amp; Liturgies" data-ar="القداسات والخدمات">Services &amp; Liturgies</a><a href="pages/events.html" data-en="Events" data-ar="الفعاليات">Events</a><a href="pages/be-sajy.html" data-en="Be Sajy" data-ar="بي ساجي">Be Sajy</a><a href="pages/announcements.html" data-en="Announcements" data-ar="الإعلانات">Announcements</a><a href="pages/gallery.html" data-en="Gallery" data-ar="المعرض">Gallery</a><a href="pages/contact.html" data-en="Contact" data-ar="اتصل بنا">Contact</a>
+</div>
+
+  
+<section id="hero">
+  <div class="hero-overlay"></div>
+  <div class="hero-float-row">
+    <img src="assets/icon-stmary-real.png" alt="" class="hero-float hero-float--left" aria-hidden="true" />
+    <img src="assets/icon-stpaul-real.png" alt="" class="hero-float hero-float--right" aria-hidden="true" />
+  </div>
+  <div class="container hero-content">
+    <div class="hero-content-inner reveal-up">
+      <h1 class="hero-title" data-en="St. Mary &amp; St. Paul Church " data-ar="كنيسة السيدة العذراء والقديس بولس الرسول">St. Mary &amp; St. Paul Church</h1>
+      <div class="hero-location" data-en="El Hadra El Gedida" data-ar="الحضرة الجديدة">El Hadra El Gedida</div>
+      <p class="hero-sub" data-en="&amp;quot;I can do all things through Christ who strengthens me.&amp;quot; · Philippians 4:13" data-ar="«أستطيع كل شيء في المسيح الذي يقوّيني» · فيلبي ٤:١٣" data-i18n="html">"I can do all things through Christ who strengthens me." · Philippians 4:13</p>
+      <div class="hero-actions">
+        <a href="pages/services.html" class="btn btn-gold" data-en="View Service Times" data-ar="عرض مواعيد القداسات والخدمات">View Service Times</a>
+        <a href="pages/about.html#clergy" class="btn btn-outline" data-en="Meet the Clergy" data-ar="تعرّف على الكهنة">Meet the Clergy</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="sec-hd reveal-up">
+      <h2 data-en="Spiritual Word" data-ar="كلمة روحية">Spiritual Word</h2>
+    </div>
+
+    <div class="welcome-card reveal-up" style="justify-content:center;text-align:center">
+      <div>
+              <div style="text-align:center;margin-bottom:1.75rem">
+        <img src="assets/virgin-mary-spiritual-word.jpg" alt="The Virgin Mary" style="display:block;margin:0 auto 0.85rem;max-width:230px;width:100%;height:auto;border-radius:16px;border:3px solid #C9A24B;box-shadow:0 12px 28px rgba(0,0,0,0.22);" />
+        <div data-en="The Virgin Mary" data-ar="السيدة العذراء مريم" style="font-family:'Cinzel','Playfair Display',serif;font-size:0.95rem;letter-spacing:0.05em;color:#C9A24B;text-transform:uppercase">The Virgin Mary</div>
+      </div>
+      <p class="welcome-quote" style="margin:0 0 1.15em" data-en="No woman has been prophesied about by the prophets and given such prominence in Scripture as Mary. Numerous symbols of her appear in the Old Testament, and her life, hymns, and miracles are recounted in the New Testament." data-ar="لا توجد امرأة تنبأ عنها الأنبياء وأهتم بها الكتاب مثل مريم ... رموز عديدة عنها في العهد القديم وكذلك سيرتها وتسبحتها والمعجزات في العهد الجديد.">No woman has been prophesied about by the prophets and given such prominence in Scripture as Mary. Numerous symbols of her appear in the Old Testament, and her life, hymns, and miracles are recounted in the New Testament.</p>
+      <p class="welcome-quote" style="margin:0 0 1.15em" data-en="How many hymns and reflections are dedicated to the Virgin Mary in the writings of the Church Fathers, titles bestowed upon her by the Church, inspired by the spirit of Scripture!" data-ar="وما أكثر التمجيدات والتأملات التي وردت عن العذراء في كتب الآباء التي تلقبها بها الكنيسة مستوحاة من روح الكتاب.">How many hymns and reflections are dedicated to the Virgin Mary in the writings of the Church Fathers, titles bestowed upon her by the Church, inspired by the spirit of Scripture!</p>
+      <p class="welcome-quote" style="margin:0 0 1.15em" data-en="She is our Mother, our Lady, the pride of our race, the Queen standing at the right hand of the King, the ever-virgin Virgin, full of grace, the Holy Mary, the all-powerful, all-helping, merciful Mother, the Mother of Light, the Mother of Mercy and Salvation, the True Vine. The Church elevates her above the archangels, and in her hymns and chants, we say: “You are exalted, O Mary, above the Cherubim, and you are raised, O Mary, above the Seraphim.”" data-ar="إنها أمنا كلنا وسيدتنا كلنا وفخر جنسنا الملكة القائمة عن يمين الملك العذراء دائمة البتولية المملوءة نعمة القديسة مريم الأم القادرة المعينة الرحيمة أم النور أم الرحمة والخلاص الكرمة الحقانية. هذه هي التي ترفعها الكنيسة فوق مرتبة رؤساء الملائكة فنقول عنها في تسابيحها وألحانها: علوت يا مريم فوق الشاروبيم وسموت يا مريم فوق السيرافيم.">She is our Mother, our Lady, the pride of our race, the Queen standing at the right hand of the King, the ever-virgin Virgin, full of grace, the Holy Mary, the all-powerful, all-helping, merciful Mother, the Mother of Light, the Mother of Mercy and Salvation, the True Vine. The Church elevates her above the archangels, and in her hymns and chants, we say: “You are exalted, O Mary, above the Cherubim, and you are raised, O Mary, above the Seraphim.”</p>
+      <p class="welcome-quote" style="margin:0 0 1.15em" data-en="The Holy Scriptures do not record the history of Saint Anne and Saint Joachim—the parents of the Virgin Mary—nor even the history of the Virgin Mary before her betrothal. This is because the Holy Scriptures focus entirely on the person of Christ, leaving other matters to tradition to record and preserve for the Holy Church." data-ar="لم يرد بالكتاب المقدس تاريخ القديسة حنة والقديس يواقيم -أبويّ العذراء مريم- بل حتى تاريخ السيدة العذراء قبل خطبتها ذلك لأن الكتاب المقدس يركز كل اهتمامه على شخصية السيد المسيح وترك باقي الأشياء للتقليد ليدونها ويذكرها للكنيسة المقدسة.">The Holy Scriptures do not record the history of Saint Anne and Saint Joachim—the parents of the Virgin Mary—nor even the history of the Virgin Mary before her betrothal. This is because the Holy Scriptures focus entirely on the person of Christ, leaving other matters to tradition to record and preserve for the Holy Church.</p>
+      <p class="welcome-quote" style="margin:0 0 1.15em" data-en="Tradition tells of a man in Judea named Joachim and his wife Hannah. They were elderly and childless. Because the Israelites looked down upon those without children, the two saints were saddened and constantly prayed to God day and night to grant them a son to serve Him in His house like Samuel. The Lord answered their prayers, and the angel Gabriel appeared to Joachim and told him that his wife Hannah would conceive and give birth to a son who would gladden his heart. Gabriel also appeared to Hannah and brought her the good news that she would give birth to a blessed daughter whom all generations would call blessed, for through her would come the salvation of Adam and his descendants. Hannah spent her pregnancy in prayer and fasting until she gave birth to a daughter, whom they named Mary. This occurred on the first day of Bashans. When Mary was 3 years old, her parents presented her to the temple to serve the Lord with the rest of the virgins. She continued to serve in the temple until she was 12 years old. Her parents had died, and when she reached marriageable age, the priests consulted together about her marriage. Zechariah the priest chose from among the elders and young men of Judah, and he took their staffs and wrote on each one the name of its owner and placed them inside the temple. A dove came up on the staff that belonged to Joseph the carpenter and then settled on his head. So the priests arranged her betrothal to Joseph, and she lived in his house in Nazareth." data-ar="يذكر التقليد انه كان في بلاد اليهودية رجل اسمه يواقيم وزوجته اسمها حَنَة وقد كانا متقدمين في السن ولم يرزقا بذرية. ولأن بني إسرائيل كانوا يعيرون من لا ولد له لهذا كانا القديسان حزينين ومداومين على الصلاة والطلب من الله نهارًا وليلًا أن يعطيهما ابنًا يخدمه في بيته كصموئيل. فاستجاب الرب الدعاء فظهر ملاك الرب جبرائيل ليواقيم وبشره بان امرأته حَنَة ستحبل وتلد مولودًا يسر قلبه، كما ظهر جبرائيل الملاك لحَنَة وزف إليها البشرى بأنها ستلد ابنة مباركة تطوبها جميع الأجيال لان منها يكون خلاص آدم وذريته. وقضت حَنَة أيام حملها في صلوات وأصوام إلى أن ولدت بنتًا وسمياها مريم، وكان ذلك في يوم أول بشنس. ولما بلغت مريم 3 سنوات قاما والداها بتقديمها للهيكل لتخدم الرب مع بقية العذارى، وظلت تخدم في الهيكل حتى بلغت الثانية عشر من عمرها، وكان أبواها قد ماتا وعندما بلغت سن الزواج تشاور الكهنة معًا على زواجها فاختار زكريا الكاهن من شيوخ وشبان يهوذا واخذ عصيهم وكتب عل كل واحدة اسم صاحبها ووضعهم داخل الهيكل فصعدت حمامة فوق العصا التي كانت ليوسف النجار ثم استقرت على رأسه فعقد الكهنة خطبتها على يوسف وعاشت في بيته الذي في الناصرة.">Tradition tells of a man in Judea named Joachim and his wife Hannah. They were elderly and childless. Because the Israelites looked down upon those without children, the two saints were saddened and constantly prayed to God day and night to grant them a son to serve Him in His house like Samuel. The Lord answered their prayers, and the angel Gabriel appeared to Joachim and told him that his wife Hannah would conceive and give birth to a son who would gladden his heart. Gabriel also appeared to Hannah and brought her the good news that she would give birth to a blessed daughter whom all generations would call blessed, for through her would come the salvation of Adam and his descendants. Hannah spent her pregnancy in prayer and fasting until she gave birth to a daughter, whom they named Mary. This occurred on the first day of Bashans. When Mary was 3 years old, her parents presented her to the temple to serve the Lord with the rest of the virgins. She continued to serve in the temple until she was 12 years old. Her parents had died, and when she reached marriageable age, the priests consulted together about her marriage. Zechariah the priest chose from among the elders and young men of Judah, and he took their staffs and wrote on each one the name of its owner and placed them inside the temple. A dove came up on the staff that belonged to Joseph the carpenter and then settled on his head. So the priests arranged her betrothal to Joseph, and she lived in his house in Nazareth.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section sec--alt">
+  <div class="container">
+    <div class="sec-hd reveal-up">
+      <span class="eyebrow" data-en="Explore" data-ar="استكشف">Explore</span>
+      <h2 data-en="Find What You Need Quickly" data-ar="الوصول السريع لما تحتاجه">Find What You Need Quickly</h2>
+      <p data-en="Browse worship times, church life, clergy, and contact details in a clear and welcoming experience." data-ar="تصفّح مواعيد العبادة وحياة الكنيسة والكهنة وبيانات التواصل بتجربة واضحة ومريحة.">Browse worship times, church life, clergy, and contact details in a clear and welcoming experience.</p>
+    </div>
+    <div class="grid-4">
+      <a class="qlink reveal-up" href="pages/about.html">
+        <div class="qlink-ico"><i class="fa-solid fa-landmark"></i></div>
+        <h3 data-en="About the Church" data-ar="عن الكنيسة">About the Church</h3>
+        <p data-en="Church identity, mission, and spiritual focus." data-ar="هوية الكنيسة ورسالتها وتركيزها الروحي.">Church identity, mission, and spiritual focus.</p>
+      </a>
+      <a class="qlink reveal-up" href="pages/about.html#clergy">
+        <div class="qlink-ico"><i class="fa-solid fa-user-group"></i></div>
+        <h3 data-en="Clergy" data-ar="الكهنة">Clergy</h3>
+        <p data-en="Meet the priests who serve the church family." data-ar="تعرّف على الكهنة الذين يخدمون أسرة الكنيسة.">Meet the priests who serve the church family.</p>
+      </a>
+      <a class="qlink reveal-up" href="pages/services.html">
+        <div class="qlink-ico"><i class="fa-solid fa-church"></i></div>
+        <h3 data-en="Services" data-ar="الخدمات">Services</h3>
+        <p data-en="Liturgies, meetings, and weekly schedules." data-ar="القداسات والاجتماعات والجداول الأسبوعية.">Liturgies, meetings, and weekly schedules.</p>
+      </a>
+      <a class="qlink reveal-up" href="pages/events.html">
+        <div class="qlink-ico"><i class="fa-solid fa-calendar-days"></i></div>
+        <h3 data-en="Events" data-ar="الفعاليات">Events</h3>
+        <p data-en="Regular church life and monthly gathering highlights." data-ar="أبرز الفعاليات المنتظمة واجتماعات الكنيسة الشهرية.">Regular church life and monthly gathering highlights.</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="sec-hd reveal-up">
+      <span class="eyebrow" data-en="Church moments" data-ar="لحظات كنسية">Church moments</span>
+      <h2 data-en="A glimpse of worship and church life" data-ar="لمحات من حياة الكنيسة">A glimpse of worship and church life</h2>
+    </div>
+    <div class="media-grid">
+      <figure class="gallery-card reveal-up">
+        <img src="assets/pope-tawadros-visit.jpg" alt="Church celebration" />
+      </figure>
+      <figure class="gallery-card reveal-up">
+        <img src="assets/iconostasis-dedication.jpg" alt="Iconostasis dedication" />
+      </figure>
+      <figure class="gallery-card reveal-up">
+        <img src="assets/e.jpeg" alt="Community gathering at the church" />
+      </figure>
+    </div>
+  
+    <div style="text-align:center;margin-top:2rem" class="reveal-up">
+      <a href="pages/gallery.html" class="btn btn-gold" data-en="Browse Gallery" data-ar="تصفح المعرض">Browse Gallery</a>
+    </div>
+  </div>
+</section>
+
+<section class="countdown">
+  <div class="container">
+    <div class="countdown-panel reveal-up">
+      <div class="cd-label" data-en="Next Liturgy" data-ar="القداس القادم">Next Liturgy</div>
+      <div class="cd-service" id="cd-service" data-en="Loading..." data-ar="جارٍ التحميل...">Loading...</div>
+      <div class="cd-info" id="cd-date" data-en="Calculating the next liturgy time..." data-ar="جارٍ حساب موعد القداس القادم...">Calculating the next liturgy time...</div>
+      <div class="cd-boxes">
+      <div class="cd-box"><span class="cd-num" id="cd-d">00</span><span class="cd-lbl" data-en="Days" data-ar="يوم">Days</span></div>
+      <div class="cd-box"><span class="cd-num" id="cd-h">00</span><span class="cd-lbl" data-en="Hours" data-ar="ساعة">Hours</span></div>
+      <div class="cd-box"><span class="cd-num" id="cd-m">00</span><span class="cd-lbl" data-en="Minutes" data-ar="دقيقة">Minutes</span></div>
+      <div class="cd-box"><span class="cd-num" id="cd-s">00</span><span class="cd-lbl" data-en="Seconds" data-ar="ثانية">Seconds</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="scripture">
+  <div class="container">
+    <p class="sc-text" data-en="&amp;quot;Run in such a way as to obtain the prize.&amp;quot;" data-ar="«هكذا اركضوا لكي تنالوا»">“Run in such a way as to obtain the prize.”</p>
+    <div class="sc-ref" data-en="1 Corinthians 9:24" data-ar="١ كورنثوس ٩:٢٤">1 Corinthians 9:24</div>
+  </div>
+</section>
+
+  
+<footer id="footer">
+  <div class="container">
+    <div class="foot-grid">
+      <div class="foot-about">
+        <div class="foot-logo">
+          <img src="assets/church-logo.png" alt="Church logo" class="foot-logo-img" />
+          <span data-en="St. Mary &amp; St. Paul Church  El Hadra El Gedida" data-ar="كنيسة السيدة العذراء والقديس بولس الرسول الحضره الجديده">St. Mary &amp; St. Paul Church  El Hadra El Gedida</span>
+        </div>
+        <div class="foot-social">
+          <a href="https://www.youtube.com/@St.Mary_St.Paul_HG" target="_blank" rel="noopener" aria-label="YouTube"><i class="fa-brands fa-youtube" style="color:#ff0000"></i></a>
+          <a href="https://www.facebook.com/St.MarySt.Paul.HG/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook" style="color:#1877f2"></i></a>
+        </div>
+      </div>
+
+      <div class="foot-col">
+        <h4 data-en="Contact" data-ar="التواصل">Contact</h4>
+        <ul class="contact-list">
+          <li><i class="fa-solid fa-phone"></i> <a href="tel:033803481">033803481</a></li>
+          <li><i class="fa-solid fa-envelope"></i><a href="mailto:stmary.stpoul.hg@gmail.com">stmary.stpoul.hg@gmail.com</a></li>
+          <li><i class="fa-solid fa-location-dot"></i><a href="https://maps.app.goo.gl/TsvVpz9CCjcPpRaT8" target="_blank" rel="noopener" data-en="El Hadra El Gedida, Alexandria" data-ar="الحضرة الجديدة، الإسكندرية">El Hadra El Gedida, Alexandria</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="foot-bottom">
+      <span data-en="© 2026 St. Mary &amp; St. Paul Church  El Hadra El Gedida. All rights reserved." data-ar="© 2026 كنيسة السيدة العذراء والقديس بولس الرسول الحضره الجديده. جميع الحقوق محفوظة.">© 2026 St. Mary &amp; St. Paul Church  El Hadra El Gedida. All rights reserved.</span>
+    </div>
+  </div>
+</footer>
+
+  <button id="btt" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Back to top">
+    <i class="fa-solid fa-chevron-up"></i>
+  </button>
+  <script src="js/main.js"></script>
+</body>
+</html>
