@@ -139,7 +139,7 @@
           </div>
           <button type="submit" class="btn btn-navy form-submit" data-en="Send Message" data-ar="إرسال الرسالة">Send Message</button>
         </form>
-        <div class="form-ok" id="form-ok" style="display:none;" data-en="Thank you. Your message has been received." data-ar="شكرًا لك. تم استلام رسالتك.">Thank you. Your message has been received.</div>
+        <div class="form-ok" id="form-ok" style="display:none;" data-en="We've opened your email app with your message ready — just press Send there to finish. If nothing opened, please email us directly at stmary.stpoul.hg@gmail.com." data-ar="فتحنالك برنامج البريد الإلكتروني ورسالتك جاهزة فيه - يتبقى بس تدوس إرسال هناك. لو مفتحش حاجة، ابعتلنا مباشرة على stmary.stpoul.hg@gmail.com.">We've opened your email app with your message ready — just press Send there to finish. If nothing opened, please email us directly at stmary.stpoul.hg@gmail.com.</div>
         <div class="form-error" id="form-error" style="display:none; color:#c0392b; margin-top:12px; font-weight:600;" data-en="Something went wrong and your message wasn't sent. Please try again, or reach us directly by phone or email." data-ar="حدث خطأ ولم تُرسل رسالتك. من فضلك حاول مرة أخرى، أو تواصل معنا مباشرة عبر الهاتف أو البريد الإلكتروني.">Something went wrong and your message wasn't sent. Please try again, or reach us directly by phone or email.</div>
       </div>
     </div>
@@ -184,44 +184,40 @@
   <script src="../js/main.js"></script>
   <script>
     (function () {
-      var WEB3FORMS_ACCESS_KEY = "PASTE_YOUR_ACCESS_KEY_HERE"; // احصل عليه مجانًا من https://web3forms.com بإيميل الكنيسة
+      var TO_EMAIL = 'stmary.stpoul.hg@gmail.com';
 
       var form = document.getElementById('contact-form');
       var formOk = document.getElementById('form-ok');
-      var formError = document.getElementById('form-error');
       var submitBtn = form.querySelector('.form-submit');
       var isArabic = /[\u0600-\u06FF]/.test(submitBtn.textContent);
-      var originalBtnText = submitBtn.textContent;
 
       form.addEventListener('submit', function (e) {
         e.preventDefault();
-        formError.style.display = 'none';
-        submitBtn.disabled = true;
-        submitBtn.textContent = isArabic ? 'جارٍ الإرسال...' : 'Sending...';
 
-        var formData = new FormData(form);
-        formData.append('access_key', WEB3FORMS_ACCESS_KEY);
-        formData.append('from_name', (formData.get('fname') + ' ' + formData.get('lname')).trim());
+        var fname = form.fname.value.trim();
+        var lname = form.lname.value.trim();
+        var email = form.email.value.trim();
+        var phone = form.phone.value.trim();
+        var subject = form.subject.value;
+        var message = form.message.value.trim();
 
-        fetch('https://api.web3forms.com/submit', {
-          method: 'POST',
-          headers: { Accept: 'application/json' },
-          body: formData
-        })
-          .then(function (res) { return res.json(); })
-          .then(function (data) {
-            if (data.success) {
-              form.style.display = 'none';
-              formOk.style.display = 'block';
-            } else {
-              return Promise.reject(data);
-            }
-          })
-          .catch(function () {
-            formError.style.display = 'block';
-            submitBtn.disabled = false;
-            submitBtn.textContent = originalBtnText;
-          });
+        var bodyLines = [
+          (isArabic ? 'الاسم' : 'Name') + ': ' + fname + ' ' + lname,
+          (isArabic ? 'البريد الإلكتروني' : 'Email') + ': ' + email,
+          (isArabic ? 'رقم الهاتف' : 'Phone') + ': ' + (phone || '-'),
+          (isArabic ? 'نوع الطلب' : 'Request Type') + ': ' + subject,
+          '',
+          message
+        ];
+
+        var mailtoLink = 'mailto:' + TO_EMAIL
+          + '?subject=' + encodeURIComponent(subject + ' - ' + fname + ' ' + lname)
+          + '&body=' + encodeURIComponent(bodyLines.join('\n'));
+
+        window.location.href = mailtoLink;
+
+        form.style.display = 'none';
+        formOk.style.display = 'block';
       });
     })();
   </script>
